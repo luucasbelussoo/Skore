@@ -1,0 +1,187 @@
+{
+	"info": {
+		"_postman_id": "680e9b2b-60be-4902-8a1e-e4d68cd4f0e3",
+		"name": "Skore",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8949606"
+	},
+	"item": [
+		{
+			"name": "CreateSkore",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"content\": {\r\n    \"name\": \"Lucas Belusso\",\r\n    \"descriprion\": \"oidjsaofjdosjfs\",\r\n    \"type\": \"pdf\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/v1/skore",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"skore"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListAllSkore",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXN0dWRhbnRlIiwiaWF0IjoxNjc1MzYyNzY0LCJleHAiOjE3MDY5MjAzNjR9.zbIADUC7upeXBUD6STbSnvzGtlngMd3wwH5CyouCsBk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/v1/skore/list-all",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"skore",
+						"list-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ListOneSkore",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWRtaW5pc3RyYWRvciIsImlhdCI6MTY3NTM2MjY3MSwiZXhwIjoxNzA2OTIwMjcxfQ.zE1QUizLxftgngO9OJ0hEKbiUk0Ek-yPBp1NHU9JwD0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/v1/skore/find-one?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"skore",
+						"find-one"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateSkore",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": {\r\n        \"description\": \"Atualizadooooooooooo\",\r\n        \"types\": \"image\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/v1/skore?id=2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"skore"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSkore",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/v1/skore?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"skore"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CountViews",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiRXN0dWRhbnRlIiwiaWF0IjoxNjc1MzYyNzY0LCJleHAiOjE3MDY5MjAzNjR9.zbIADUC7upeXBUD6STbSnvzGtlngMd3wwH5CyouCsBk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/v1/skore/views?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"v1",
+						"skore",
+						"views"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
